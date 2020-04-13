@@ -21,7 +21,7 @@ public class SwiggyZipCode {
 
 
     public static void checkCode(int zipcode) throws InvalideCodeException{
-        for(int i =0;i< list.size();i++) {
+        for(int i :list) {
             if (zipcode == list.get(i)) {
                 throw new InvalideCodeException("Non-deliverable zipcode");
             }
